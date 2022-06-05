@@ -1,12 +1,12 @@
 # Silent Hill 3 Trainer
-by @zyapguy and @bigwang74
+by zyapguy and bigwang74
 
 ## Technologies
 - Well, uhh. C# and thats about it...
 - There was also a weird **old** VB file that we converted to C#
 
 ## How?
-We found an **old** Visual Basic file that allows writing values to certain memory addresses. @bigwang74 found the memory addresses of useful things in the game and created the original trainer using VB with this file in December 2021. Later, zyapguy painstakingly converted the memory editor file to C# and got it working (*somehow*). We later decided to port bigwang74's trainer into C#. With @bigwang74's immense help, @zyapguy was able to recreate the trainer in C#.
+We found an **old** Visual Basic file that allows writing values to certain memory addresses. Bigwang74 found the memory addresses of useful things in the game and created the original trainer using VB with this file in December 2021. Later, zyapguy painstakingly converted the memory editor file to C# and got it working (*somehow*). We later decided to port bigwang74's trainer into C#. With bigwang74's immense help, zyapguy was able to recreate the trainer in C#.
 
 The project is currently maintained by zyapguy and bigwang74.
 
