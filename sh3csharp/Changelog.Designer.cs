@@ -40,7 +40,8 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(353, 391);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "Version 1.0 Changelog\n- Initial Release";
+            this.richTextBox1.Text = "Version 1.1 Changelog\n- Ability to change FOV\n\nVersion 1.0 Changelog\n- Initial Re" +
+    "lease";
             // 
             // button1
             // 

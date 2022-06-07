@@ -11,3 +11,4 @@ C:\Users\zyapi\source\repos\sh3trainer\silenthill3trainer\sh3csharp\obj\Release\
 C:\Users\zyapi\source\repos\sh3trainer\silenthill3trainer\sh3csharp\obj\Release\sh3csharp.csproj.CoreCompileInputs.cache
 C:\Users\zyapi\source\repos\sh3trainer\silenthill3trainer\sh3csharp\obj\Release\sh3csharp.exe
 C:\Users\zyapi\source\repos\sh3trainer\silenthill3trainer\sh3csharp\obj\Release\sh3csharp.pdb
+C:\Users\zyapi\source\repos\sh3trainer\silenthill3trainer\sh3csharp\obj\Release\sh3csharp.DebugWindow.resources

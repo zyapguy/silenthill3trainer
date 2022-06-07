@@ -117,23 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cb0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cb0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quandale" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\quandale.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Vinesauce_joel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Vinesauce_joel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sh360" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sh360.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shiba" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shiba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2243796-AkiraYamaoka_45274_screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2243796-AkiraYamaoka_45274_screen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

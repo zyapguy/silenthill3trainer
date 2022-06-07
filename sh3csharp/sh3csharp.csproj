@@ -81,6 +81,12 @@
     <Compile Include="Changelog.Designer.cs">
       <DependentUpon>Changelog.cs</DependentUpon>
     </Compile>
+    <Compile Include="DebugWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DebugWindow.Designer.cs">
+      <DependentUpon>DebugWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Changelog.resx">
       <DependentUpon>Changelog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DebugWindow.resx">
+      <DependentUpon>DebugWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -126,6 +135,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReadWritingMemory.vb" />
+    <None Include="Resources\2243796-AkiraYamaoka_45274_screen.jpg" />
+    <None Include="Resources\Vinesauce_joel.jpg" />
+    <None Include="Resources\cb0.jpg" />
+    <None Include="Resources\quandale.jpg" />
+    <None Include="Resources\shiba.png" />
     <None Include="Resources\sh360.ico" />
   </ItemGroup>
   <ItemGroup>

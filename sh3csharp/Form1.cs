@@ -21,6 +21,8 @@ namespace sh3csharp
         public bool infiniteMedkits = false;
         public bool infiniteAmpoules = false;
 
+        public long chosenFov;
+
         public Form1()
         {
             InitializeComponent();
@@ -233,7 +235,103 @@ namespace sh3csharp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Set default FOV
+            chosenFov = 4123149057 + (224 - 1);
+            SetFov();
+        }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            // Broken, please don't reactivate. Will crash SH3.
+            //ReadWritingMemory.WriteXBytes("sh3", 0x8984E0 + 0x0000011C, "20");
+        }
+
+        private void sliderFov_Scroll(object sender, EventArgs e)
+        {
+            fovTextbox.Text = sliderFov.Value.ToString();
+        }
+
+        private void fovTextbox_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int parsedValue = Int32.Parse(fovTextbox.Text);
+                if (parsedValue >= 0 && parsedValue <= 255)
+                { 
+                    sliderFov.Value = Int32.Parse(fovTextbox.Text);
+                }
+                else
+                {
+                    fovTextbox.Text = "224";
+                    MessageBox.Show("Value of FOV should be between 0 and 255");
+                }
+            }
+            catch
+            {
+                fovTextbox.Text = "224";
+                MessageBox.Show("Value of FOV should be between 0 and 255");
+            }
+        }
+
+        private void fovTimer_Tick(object sender, EventArgs e)
+        {
+            long receivedValue = ReadWritingMemory.ReadLong("sh3", 0x0712C722);
+            long fov = receivedValue - 4123149057 + 1;
+            currentFovBox.Text = fov.ToString();
+            SetFov();
+        }
+
+        private void setFovButton_Click(object sender, EventArgs e)
+        {
+            int requestedValue = sliderFov.Value;
+            long fovToWrite = 4123149057 + (requestedValue - 1);
+            chosenFov = fovToWrite;
+        }
+
+        public void SetFov()
+        {
+            ReadWritingMemory.WriteLong("sh3", 0x0712C722, chosenFov);
+        }
+
+        private void currentFovBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        // Default FOV
+        private void button10_Click(object sender, EventArgs e)
+        {
+            chosenFov = 4123149057 + (224 - 1);
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // FOV Override Box
+        private void checkBox10_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox10.Checked)
+            {
+                fovTimer.Start();
+            }
+            else
+            {
+                fovTimer.Stop();
+            }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            hellTimer.Start();
+        }
+
+        private void hellTimer_Tick(object sender, EventArgs e)
+        {
+            Random r = new Random();
+            int randomByte = r.Next(0, 255);
+            ReadWritingMemory.WriteXBytes("sh3", 0x0089875C, randomByte.ToString());
         }
     }
 }

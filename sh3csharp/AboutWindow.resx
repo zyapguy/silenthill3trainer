@@ -125,11 +125,7 @@ Although this program is technically a cheat, it should not be used to create il
 WARNING SPEEDRUNNERS:
 This program displays the codes for all the combination puzzles. Be very careful to not do runs with this trainer open.
 
-Other than that, enjoy :)
--zyapguy and bigwang74</value>
-  </data>
-  <data name="richTextBox2.Text" xml:space="preserve">
-    <value>All of the magazine clothes will crash the game when you equip them. If the clothing does not have the description "Silent Hill 3 Original", do not equip it. This is because they are not included in the game.
+All of the magazine clothes will crash the game when you equip them. If the clothing does not have the description "Silent Hill 3 Original", do not equip it. This is because they are not included in the game.
 
 Report any bugs through the github.
 
@@ -137,7 +133,19 @@ Some combination locks will be the same with each other. Thats how the game work
 
 WARNING: You need to have the Widescreen fix for this trainer to work.
 
-Get it from : https://github.com/ThirteenAG/WidescreenFixesPack/releases/download/sh3/SilentHill3.WidescreenFix.zip</value>
+Get it from : https://github.com/ThirteenAG/WidescreenFixesPack/releases/download/sh3/SilentHill3.WidescreenFix.zip
+
+
+Other than that, enjoy :)
+-zyapguy and bigwang74</value>
+  </data>
+  <data name="richTextBox4.Text" xml:space="preserve">
+    <value>bigwang74
+Anonymous friend of zyap, some say they're Thelegend27 or the 9 + 10 kid.
+Trainer / Cheat developer for fun sometimes. 
+((Un)professional who likes to ruin the fun for others)
+Makes other programs on things that interests them sometimes for fun.
+Crack and coke addict + alcoholic. </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

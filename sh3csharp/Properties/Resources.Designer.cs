@@ -61,12 +61,62 @@ namespace sh3csharp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2243796_AkiraYamaoka_45274_screen {
+            get {
+                object obj = ResourceManager.GetObject("2243796-AkiraYamaoka_45274_screen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cb0 {
+            get {
+                object obj = ResourceManager.GetObject("cb0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quandale {
+            get {
+                object obj = ResourceManager.GetObject("quandale", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon sh360 {
             get {
                 object obj = ResourceManager.GetObject("sh360", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shiba {
+            get {
+                object obj = ResourceManager.GetObject("shiba", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vinesauce_joel {
+            get {
+                object obj = ResourceManager.GetObject("Vinesauce_joel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
