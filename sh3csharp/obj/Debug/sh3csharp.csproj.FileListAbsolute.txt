@@ -24,3 +24,16 @@ C:\Users\zyapi\source\repos\sh3trainer\silenthill3trainer\sh3csharp\obj\Debug\sh
 C:\Users\zyapi\source\repos\sh3trainer\silenthill3trainer\sh3csharp\obj\Debug\sh3csharp.exe
 C:\Users\zyapi\source\repos\sh3trainer\silenthill3trainer\sh3csharp\obj\Debug\sh3csharp.pdb
 C:\Users\zyapi\source\repos\sh3trainer\silenthill3trainer\sh3csharp\obj\Debug\sh3csharp.DebugWindow.resources
+C:\Users\westo\Documents\GitHub\silenthill3trainer\sh3csharp\obj\Debug\sh3csharp.csprojAssemblyReference.cache
+C:\Users\westo\Documents\GitHub\silenthill3trainer\sh3csharp\obj\Debug\sh3csharp.AboutWindow.resources
+C:\Users\westo\Documents\GitHub\silenthill3trainer\sh3csharp\obj\Debug\sh3csharp.Changelog.resources
+C:\Users\westo\Documents\GitHub\silenthill3trainer\sh3csharp\obj\Debug\sh3csharp.DebugWindow.resources
+C:\Users\westo\Documents\GitHub\silenthill3trainer\sh3csharp\obj\Debug\sh3csharp.Form1.resources
+C:\Users\westo\Documents\GitHub\silenthill3trainer\sh3csharp\obj\Debug\sh3csharp.Properties.Resources.resources
+C:\Users\westo\Documents\GitHub\silenthill3trainer\sh3csharp\obj\Debug\sh3csharp.csproj.GenerateResource.cache
+C:\Users\westo\Documents\GitHub\silenthill3trainer\sh3csharp\obj\Debug\sh3csharp.csproj.CoreCompileInputs.cache
+C:\Users\westo\Documents\GitHub\silenthill3trainer\sh3csharp\obj\Debug\sh3csharp.exe
+C:\Users\westo\Documents\GitHub\silenthill3trainer\sh3csharp\obj\Debug\sh3csharp.pdb
+C:\Users\westo\Documents\GitHub\silenthill3trainer\sh3csharp\bin\Debug\sh3csharp.exe.config
+C:\Users\westo\Documents\GitHub\silenthill3trainer\sh3csharp\bin\Debug\sh3csharp.exe
+C:\Users\westo\Documents\GitHub\silenthill3trainer\sh3csharp\bin\Debug\sh3csharp.pdb

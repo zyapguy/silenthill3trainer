@@ -110,7 +110,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.hellTimer = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tabPage7.SuspendLayout();
@@ -555,6 +554,7 @@
             this.hoursBox.Name = "hoursBox";
             this.hoursBox.Size = new System.Drawing.Size(85, 20);
             this.hoursBox.TabIndex = 12;
+           // this.hoursBox.TextChanged += new System.EventHandler(this.hoursBox_TextChanged);
             // 
             // label12
             // 
@@ -975,10 +975,6 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Hospital Blood";
             // 
-            // hellTimer
-            // 
-            this.hellTimer.Tick += new System.EventHandler(this.hellTimer_Tick);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1102,7 +1098,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Timer hellTimer;
     }
 }
 

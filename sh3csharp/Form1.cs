@@ -216,14 +216,17 @@ namespace sh3csharp
         private void clearTimeTimer_Tick(object sender, EventArgs e)
         {
             float clearTime = ReadWritingMemory.ReadFloat("sh3", 0x70E66F4); // read the current clear time
+
             TimeSpan timePast = TimeSpan.FromSeconds(clearTime); // convert the clear time so that it is easy to display
 
             gameClearTimeText.Text = timePast.Hours.ToString() + "H " + timePast.Minutes.ToString() + "M " + timePast.Seconds.ToString() + "S"; // display the clear time
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e) // BUG! - values above 24 hours will be treated with modulus. For example 25 hours = 1 hour.
         {
             float total = (float.Parse(hoursBox.Text) * 3600) + (float.Parse(minutesBox.Text) * 60) + (float.Parse(secondsBox.Text)); // add the new clear time values to a total 
+          
+            //float total = Convert.ToSingle((Convert.ToDecimal(hoursBox.Text) * 3600) + (Convert.ToDecimal(minutesBox.Text) * 60) + (Convert.ToDecimal(secondsBox.Text))); alternative
             ReadWritingMemory.WriteFloat("sh3", 0x70E66F4, total); // write the new values of the clear time to memory
         }
 
@@ -322,16 +325,13 @@ namespace sh3csharp
             }
         }
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-            hellTimer.Start();
-        }
-
-        private void hellTimer_Tick(object sender, EventArgs e)
+        private void button11_Click(object sender, EventArgs e) // change Heather into a spawn of satan.
         {
             Random r = new Random();
             int randomByte = r.Next(0, 255);
             ReadWritingMemory.WriteXBytes("sh3", 0x0089875C, randomByte.ToString());
         }
+
+        
     }
 }
