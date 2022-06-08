@@ -5,6 +5,9 @@ by zyapguy and bigwang74
 - Well, uhh. C# and thats about it...
 - There was also a weird **old** VB file that we converted to C#
 
+## How to use?
+Launch Silent Hill 3 first, then launch the trainer. It is preferable if the trainer is started when a game is in progress (i.e. the player is not in the main menu). After that everything will just *work*. NOTE : You must have SH3 Widescreen fix for this to work. Otherwise the memory addresses will be painfully offset.
+
 ## How?
 We found an **old** Visual Basic file that allows writing values to certain memory addresses. Bigwang74 found the memory addresses of useful things in the game and created the original trainer using VB with this file in December 2021. Later, zyapguy painstakingly converted the memory editor file to C# and got it working (*somehow*). We later decided to port bigwang74's trainer into C#. With bigwang74's immense help, zyapguy was able to recreate the trainer in C#.
 
@@ -26,7 +29,7 @@ The project is currently maintained by zyapguy and bigwang74.
 ## Coming Soon
 These are what we are planning on adding next, there is not a 100% guarantee that these will be added.
 - Ability to change combinations of the puzzles.
-- Changing FOV.
+- Changing FOV. DONE! (*we think*)
 - Manually setting ammo counts
 
 ## Requirements
@@ -42,5 +45,6 @@ Things we will **NOT** accept:
 - Stuff that works 2% of the time
 - Literal malware
 - Uninterpretable Win32API Garbage. Such as legacy NT Kernel calls (such as `NtQueryInformationProcess`)
+- Stuff that changes how the back-end works, such as changing memory with Win32 calls instead of the cursed VB file.
 
 Other than that, you are good :)
