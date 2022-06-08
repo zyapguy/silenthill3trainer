@@ -41,5 +41,6 @@ Things we will **NOT** accept:
 - Small easter eggs
 - Stuff that works 2% of the time
 - Literal malware
+- Uninterpretable Win32API Garbage. Such as legacy NT Kernel calls (such as `NtQueryInformationProcess`)
 
 Other than that, you are good :)
