@@ -293,7 +293,16 @@ namespace sh3csharp
 
         public void SetFov()
         {
-            ReadWritingMemory.WriteLong("sh3", 0x0712C722, chosenFov);
+            // Cutscene flag detection added to SetFov()
+            // If cutsceneflag is equal to 0, the game is in Cutscene mode
+            // If cutsceneflag is equal to 1, the game is in Gameplay mode
+            // With this system the FOV changing problem should be stopped. However, I've kept the override and an updated message just in case.
+            int cutsceneflag = ReadWritingMemory.ReadInteger("sh3", 0x89833C);
+            if (cutsceneflag == 1)
+            {
+                ReadWritingMemory.WriteLong("sh3", 0x0712C722, chosenFov);
+            }
+            
         }
 
         private void currentFovBox_TextChanged(object sender, EventArgs e)

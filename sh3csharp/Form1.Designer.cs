@@ -304,10 +304,10 @@
             this.label23.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(3, 201);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(504, 38);
+            this.label23.Size = new System.Drawing.Size(459, 57);
             this.label23.TabIndex = 20;
-            this.label23.Text = "You must disable this in cutscenes, otherwise it fights\r\nwith widescreen fix. Onl" +
-    "y enable in gameplay.";
+            this.label23.Text = "You may want to disable this in cutscenes \r\nin the event that the automatic cutsc" +
+    "ene detection\r\ndoes not work.";
             // 
             // checkBox10
             // 
@@ -554,7 +554,6 @@
             this.hoursBox.Name = "hoursBox";
             this.hoursBox.Size = new System.Drawing.Size(85, 20);
             this.hoursBox.TabIndex = 12;
-           // this.hoursBox.TextChanged += new System.EventHandler(this.hoursBox_TextChanged);
             // 
             // label12
             // 
