@@ -28,7 +28,7 @@ The project is currently maintained by zyapguy and bigwang74.
 
 ## Coming Soon
 These are what we are planning on adding next, there is not a 100% guarantee that these will be added.
-- Ability to change combinations of the puzzles.
+- Ability to change combinations of the puzzles. DONE!
 - Changing FOV. DONE! (*we think*)
 - Manually setting ammo counts
 
