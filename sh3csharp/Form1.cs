@@ -446,7 +446,7 @@ namespace sh3csharp
 
         }
 
-        private void btnApplycodes_Click(object sender, EventArgs e) // unfinished need to figure out how to convert hex strings into actual hex to then convert to int32 to send
+        private void btnApplycodes_Click(object sender, EventArgs e) 
         {
             ReadWritingMemory.WriteInteger("sh3", 0x715D2E8, convertStringToCode(rtbShakespeare.Text));
             ReadWritingMemory.WriteInteger("sh3", 0xC0112C, convertStringToCode(rtbKeypad.Text));
