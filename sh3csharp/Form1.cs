@@ -241,6 +241,62 @@ namespace sh3csharp
             // Set default FOV
             chosenFov = 4123149057 + (224 - 1);
             SetFov();
+
+            int difficulty = ReadWritingMemory.ReadInteger("sh3", 0x070E66DC); // yes yanderedev called feel free to do this a different way.
+
+            if (difficulty.Equals(65536) == true)
+            {
+                cb_action.Text = "Easy";
+                cb_riddle.Text = "Easy";
+            }
+
+            if (difficulty.Equals(131072) == true)
+            {
+                cb_action.Text = "Normal";
+                cb_riddle.Text = "Easy";
+            }
+
+            if (difficulty.Equals(196608) == true)
+            {
+                cb_action.Text = "Hard";
+                cb_riddle.Text = "Easy";
+            }
+
+            if (difficulty.Equals(16842752) == true)
+            {
+                cb_action.Text = "Easy";
+                cb_riddle.Text = "Normal";
+            }
+
+            if (difficulty.Equals(16908288) == true)
+            {
+                cb_action.Text = "Normal";
+                cb_riddle.Text = "Normal";
+            }
+
+            if (difficulty.Equals(16973824) == true)
+            {
+                cb_action.Text = "Hard";
+                cb_riddle.Text = "Normal";
+            }
+
+            if (difficulty.Equals(33619968) == true)
+            {
+                cb_action.Text = "Easy";
+                cb_riddle.Text = "Hard";
+            }
+
+            if (difficulty.Equals(33685504) == true)
+            {
+                cb_action.Text = "Normal";
+                cb_riddle.Text = "Hard";
+            }
+
+            if (difficulty.Equals(33751040) == true)
+            {
+                cb_action.Text = "Hard";
+                cb_riddle.Text = "Hard";
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -341,6 +397,55 @@ namespace sh3csharp
             ReadWritingMemory.WriteXBytes("sh3", 0x0089875C, randomByte.ToString());
         }
 
-        
+        private void btn_applydifficulty_Click(object sender, EventArgs e) // yes yanderedev called feel free to do this a different way.
+        {
+            if (cb_action.Text == "Easy" && cb_riddle.Text == "Easy")
+            {
+                ReadWritingMemory.WriteInteger("sh3", 0x070E66DC, 65536);
+            }
+
+            if (cb_action.Text == "Normal" && cb_riddle.Text == "Easy")
+            {
+                ReadWritingMemory.WriteInteger("sh3", 0x070E66DC, 131072);
+            }
+
+            if (cb_action.Text == "Hard" && cb_riddle.Text == "Easy")
+            {
+                ReadWritingMemory.WriteInteger("sh3", 0x070E66DC, 196608);
+            }
+
+            if (cb_action.Text == "Easy" && cb_riddle.Text == "Normal")
+            {
+                ReadWritingMemory.WriteInteger("sh3", 0x070E66DC, 16842752);
+            }
+
+            if (cb_action.Text == "Normal" && cb_riddle.Text == "Normal")
+            {
+                ReadWritingMemory.WriteInteger("sh3", 0x070E66DC, 16908288);
+            }
+
+            if (cb_action.Text == "Hard" && cb_riddle.Text == "Normal")
+            {
+                ReadWritingMemory.WriteInteger("sh3", 0x070E66DC, 16973824);
+            }
+
+            if (cb_action.Text == "Easy" && cb_riddle.Text == "Hard")
+            {
+                ReadWritingMemory.WriteInteger("sh3", 0x070E66DC, 33619968);
+            }
+
+            if (cb_action.Text == "Normal" && cb_riddle.Text == "Hard")
+            {
+                ReadWritingMemory.WriteInteger("sh3", 0x070E66DC, 33685504);
+            }
+
+            if (cb_action.Text == "Hard" && cb_riddle.Text == "Hard")
+            {
+                ReadWritingMemory.WriteInteger("sh3", 0x070E66DC, 33751040);
+            }
+
+        }
+
+       
     }
 }

@@ -85,6 +85,12 @@
             this.label11 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label28 = new System.Windows.Forms.Label();
+            this.cb_action = new System.Windows.Forms.ComboBox();
+            this.btn_applydifficulty = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.cb_riddle = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -675,6 +681,12 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label28);
+            this.tabPage1.Controls.Add(this.cb_action);
+            this.tabPage1.Controls.Add(this.btn_applydifficulty);
+            this.tabPage1.Controls.Add(this.label27);
+            this.tabPage1.Controls.Add(this.label26);
+            this.tabPage1.Controls.Add(this.cb_riddle);
             this.tabPage1.Controls.Add(this.label21);
             this.tabPage1.Controls.Add(this.label20);
             this.tabPage1.Controls.Add(this.checkBox2);
@@ -687,6 +699,74 @@
             this.tabPage1.Text = "General";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Consolas", 12F);
+            this.label28.Location = new System.Drawing.Point(6, 89);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(180, 19);
+            this.label28.TabIndex = 16;
+            this.label28.Text = "Difficulty Changer:";
+            // 
+            // cb_action
+            // 
+            this.cb_action.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_action.FormattingEnabled = true;
+            this.cb_action.Items.AddRange(new object[] {
+            "Easy",
+            "Normal",
+            "Hard"});
+            this.cb_action.Location = new System.Drawing.Point(6, 146);
+            this.cb_action.Name = "cb_action";
+            this.cb_action.Size = new System.Drawing.Size(100, 21);
+            this.cb_action.TabIndex = 15;
+            this.cb_action.TabStop = false;
+            // 
+            // btn_applydifficulty
+            // 
+            this.btn_applydifficulty.Location = new System.Drawing.Point(6, 217);
+            this.btn_applydifficulty.Name = "btn_applydifficulty";
+            this.btn_applydifficulty.Size = new System.Drawing.Size(100, 23);
+            this.btn_applydifficulty.TabIndex = 14;
+            this.btn_applydifficulty.Text = "Apply Difficulty";
+            this.btn_applydifficulty.UseVisualStyleBackColor = true;
+            this.btn_applydifficulty.Click += new System.EventHandler(this.btn_applydifficulty_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Consolas", 12F);
+            this.label27.Location = new System.Drawing.Point(6, 168);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(171, 19);
+            this.label27.TabIndex = 13;
+            this.label27.Text = "Riddle Difficulty:";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Consolas", 12F);
+            this.label26.Location = new System.Drawing.Point(6, 124);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(171, 19);
+            this.label26.TabIndex = 12;
+            this.label26.Text = "Action Difficulty:";
+            // 
+            // cb_riddle
+            // 
+            this.cb_riddle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_riddle.FormattingEnabled = true;
+            this.cb_riddle.Items.AddRange(new object[] {
+            "Easy",
+            "Normal",
+            "Hard"});
+            this.cb_riddle.Location = new System.Drawing.Point(6, 190);
+            this.cb_riddle.Name = "cb_riddle";
+            this.cb_riddle.Size = new System.Drawing.Size(100, 21);
+            this.cb_riddle.TabIndex = 11;
+            this.cb_riddle.TabStop = false;
             // 
             // label21
             // 
@@ -1097,6 +1177,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.ComboBox cb_riddle;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Button btn_applydifficulty;
+        private System.Windows.Forms.ComboBox cb_action;
+        private System.Windows.Forms.Label label28;
     }
 }
 
