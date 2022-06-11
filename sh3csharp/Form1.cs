@@ -446,6 +446,74 @@ namespace sh3csharp
 
         }
 
-       
+        private void btnApplycodes_Click(object sender, EventArgs e) // unfinished need to figure out how to convert hex strings into actual hex to then convert to int32 to send
+        {
+            ReadWritingMemory.WriteInteger("sh3", 0x715D2E8, convertStringToCode(rtbShakespeare.Text));
+            ReadWritingMemory.WriteInteger("sh3", 0xC0112C, convertStringToCode(rtbKeypad.Text));
+            ReadWritingMemory.WriteInteger("sh3", 0x715D2FC, convertStringToCode(rtbClockcode.Text));
+            ReadWritingMemory.WriteInteger("sh3", 0x715D304, convertStringToCode(rtbBloodcode.Text));
+        }
+        public int convertStringToCode(string userstring)
+        {
+            if (userstring.Length == 0)
+            {
+                return default;
+            }
+            for (int i = 0; i < userstring.Length; i++)
+            {
+                char currentchar = userstring[i]; // to detect chars out of 0 - 9 change if you know a better method.
+                if (currentchar.Equals(Convert.ToChar("0")))
+                {
+                    continue;
+                }
+                else if (currentchar.Equals(Convert.ToChar("1")))
+                {
+                    continue;
+                }
+                else if (currentchar.Equals(Convert.ToChar("2")))
+                {
+                    continue;
+                }
+                else if (currentchar.Equals(Convert.ToChar("3")))
+                {
+                    continue;
+                }
+                else if (currentchar.Equals(Convert.ToChar("4")))
+                {
+                    continue;
+                }
+                else if (currentchar.Equals(Convert.ToChar("5")))
+                {
+                    continue;
+                }
+                else if (currentchar.Equals(Convert.ToChar("6")))
+                {
+                    continue;
+                }
+                else if (currentchar.Equals(Convert.ToChar("7")))
+                {
+                    continue;
+                }
+                else if (currentchar.Equals(Convert.ToChar("8")))
+                {
+                    continue;
+                }
+                else if (currentchar.Equals(Convert.ToChar("9")))
+                {
+                    continue;
+                }
+                else
+                {
+                    MessageBox.Show("Please use values between 0 - 9 only.");
+                    return default;
+                }
+
+            }
+
+            
+            string fourchars = userstring.Substring(0, 4); // all codes only have the first 4 chars
+            int total = Convert.ToInt32(fourchars, 16);
+            return total;
+        }
     }
 }
