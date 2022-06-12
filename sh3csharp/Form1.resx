@@ -138,6 +138,12 @@
   <metadata name="fovTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>789, 17</value>
   </metadata>
+  <data name="label35.Text" xml:space="preserve">
+    <value>Numpad 7 - look left, Numpad 8 - Forward, Numpad 9 - Look right,
+Numpad 4 - Strafe left, Numpad 5 - Emergency Deactivation, Numpad 6 - Strafe Right,
+Numpad 1 - Descend, Numpad 2 - Backwards, Numpad 3 - Ascend
+</value>
+  </data>
   <data name="label24.Text" xml:space="preserve">
     <value>In my restless dreams, I see that tab.
        Broken/Experimental.
@@ -147,6 +153,9 @@
        In our 'special tab'...
        Waiting for you...</value>
   </data>
+  <metadata name="freeCamTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>888, 17</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>57</value>
   </metadata>

@@ -43,6 +43,10 @@
             this.button8 = new System.Windows.Forms.Button();
             this.fovTimer = new System.Windows.Forms.Timer(this.components);
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.label25 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
@@ -107,6 +111,16 @@
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnApplycodes = new System.Windows.Forms.Button();
+            this.label33 = new System.Windows.Forms.Label();
+            this.rtbBloodcode = new System.Windows.Forms.RichTextBox();
+            this.rtbClockcode = new System.Windows.Forms.RichTextBox();
+            this.rtbKeypad = new System.Windows.Forms.RichTextBox();
+            this.rtbShakespeare = new System.Windows.Forms.RichTextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.hospitalBlood = new System.Windows.Forms.RichTextBox();
             this.hospitalClock = new System.Windows.Forms.RichTextBox();
@@ -116,16 +130,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.rtbBloodcode = new System.Windows.Forms.RichTextBox();
-            this.rtbClockcode = new System.Windows.Forms.RichTextBox();
-            this.rtbKeypad = new System.Windows.Forms.RichTextBox();
-            this.rtbShakespeare = new System.Windows.Forms.RichTextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.btnApplycodes = new System.Windows.Forms.Button();
+            this.freeCamTimer = new System.Windows.Forms.Timer(this.components);
+            this.label37 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tabPage7.SuspendLayout();
@@ -233,6 +239,11 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.label37);
+            this.tabPage8.Controls.Add(this.label36);
+            this.tabPage8.Controls.Add(this.label35);
+            this.tabPage8.Controls.Add(this.label34);
+            this.tabPage8.Controls.Add(this.checkBox11);
             this.tabPage8.Controls.Add(this.label25);
             this.tabPage8.Controls.Add(this.button11);
             this.tabPage8.Controls.Add(this.label24);
@@ -245,6 +256,49 @@
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Broken / Experimental";
             this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Consolas", 7.5F);
+            this.label36.Location = new System.Drawing.Point(317, 96);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(90, 12);
+            this.label36.TabIndex = 26;
+            this.label36.Text = "*Not Operational*";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Consolas", 7F);
+            this.label35.Location = new System.Drawing.Point(107, 126);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(420, 36);
+            this.label35.TabIndex = 25;
+            this.label35.Text = resources.GetString("label35.Text");
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(7, 93);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(308, 30);
+            this.label34.TabIndex = 14;
+            this.label34.Text = "THIS MAY HAVE THE ABILITY TO CAUSE SEIZURES\r\nIF YOU SUFFER FROM PHOTOSENSITIVE EP" +
+    "ILEPSY!";
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Font = new System.Drawing.Font("Consolas", 12F);
+            this.checkBox11.Location = new System.Drawing.Point(10, 126);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(91, 23);
+            this.checkBox11.TabIndex = 24;
+            this.checkBox11.Text = "Freecam";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
             // label25
             // 
@@ -985,6 +1039,103 @@
             this.tabPage3.Text = "Codes";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // btnApplycodes
+            // 
+            this.btnApplycodes.Font = new System.Drawing.Font("Consolas", 9.75F);
+            this.btnApplycodes.Location = new System.Drawing.Point(251, 287);
+            this.btnApplycodes.Name = "btnApplycodes";
+            this.btnApplycodes.Size = new System.Drawing.Size(101, 23);
+            this.btnApplycodes.TabIndex = 14;
+            this.btnApplycodes.Text = "Apply";
+            this.btnApplycodes.UseVisualStyleBackColor = true;
+            this.btnApplycodes.Click += new System.EventHandler(this.btnApplycodes_Click);
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Consolas", 12F);
+            this.label33.Location = new System.Drawing.Point(13, 171);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(117, 19);
+            this.label33.TabIndex = 14;
+            this.label33.Text = "Code Editor:";
+            // 
+            // rtbBloodcode
+            // 
+            this.rtbBloodcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtbBloodcode.Location = new System.Drawing.Point(175, 290);
+            this.rtbBloodcode.Name = "rtbBloodcode";
+            this.rtbBloodcode.Size = new System.Drawing.Size(70, 23);
+            this.rtbBloodcode.TabIndex = 18;
+            this.rtbBloodcode.Text = "";
+            // 
+            // rtbClockcode
+            // 
+            this.rtbClockcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtbClockcode.Location = new System.Drawing.Point(175, 261);
+            this.rtbClockcode.Name = "rtbClockcode";
+            this.rtbClockcode.Size = new System.Drawing.Size(70, 23);
+            this.rtbClockcode.TabIndex = 17;
+            this.rtbClockcode.Text = "";
+            // 
+            // rtbKeypad
+            // 
+            this.rtbKeypad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtbKeypad.Location = new System.Drawing.Point(175, 232);
+            this.rtbKeypad.Name = "rtbKeypad";
+            this.rtbKeypad.Size = new System.Drawing.Size(70, 23);
+            this.rtbKeypad.TabIndex = 16;
+            this.rtbKeypad.Text = "";
+            // 
+            // rtbShakespeare
+            // 
+            this.rtbShakespeare.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtbShakespeare.Location = new System.Drawing.Point(175, 203);
+            this.rtbShakespeare.Name = "rtbShakespeare";
+            this.rtbShakespeare.Size = new System.Drawing.Size(70, 23);
+            this.rtbShakespeare.TabIndex = 15;
+            this.rtbShakespeare.Text = "";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(13, 232);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(144, 19);
+            this.label29.TabIndex = 12;
+            this.label29.Text = "Hospital Keypad";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(13, 203);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(108, 19);
+            this.label30.TabIndex = 11;
+            this.label30.Text = "Shakespeare";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(13, 262);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(135, 19);
+            this.label31.TabIndex = 13;
+            this.label31.Text = "Hospital Clock";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(13, 291);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(135, 19);
+            this.label32.TabIndex = 14;
+            this.label32.Text = "Hospital Blood";
+            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -1074,102 +1225,20 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Hospital Blood";
             // 
-            // rtbBloodcode
+            // freeCamTimer
             // 
-            this.rtbBloodcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rtbBloodcode.Location = new System.Drawing.Point(175, 290);
-            this.rtbBloodcode.Name = "rtbBloodcode";
-            this.rtbBloodcode.Size = new System.Drawing.Size(70, 23);
-            this.rtbBloodcode.TabIndex = 18;
-            this.rtbBloodcode.Text = "";
+            this.freeCamTimer.Interval = 5;
+            this.freeCamTimer.Tick += new System.EventHandler(this.freeCamTimer_Tick);
             // 
-            // rtbClockcode
+            // label37
             // 
-            this.rtbClockcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rtbClockcode.Location = new System.Drawing.Point(175, 261);
-            this.rtbClockcode.Name = "rtbClockcode";
-            this.rtbClockcode.Size = new System.Drawing.Size(70, 23);
-            this.rtbClockcode.TabIndex = 17;
-            this.rtbClockcode.Text = "";
-            // 
-            // rtbKeypad
-            // 
-            this.rtbKeypad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rtbKeypad.Location = new System.Drawing.Point(175, 232);
-            this.rtbKeypad.Name = "rtbKeypad";
-            this.rtbKeypad.Size = new System.Drawing.Size(70, 23);
-            this.rtbKeypad.TabIndex = 16;
-            this.rtbKeypad.Text = "";
-            // 
-            // rtbShakespeare
-            // 
-            this.rtbShakespeare.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rtbShakespeare.Location = new System.Drawing.Point(175, 203);
-            this.rtbShakespeare.Name = "rtbShakespeare";
-            this.rtbShakespeare.Size = new System.Drawing.Size(70, 23);
-            this.rtbShakespeare.TabIndex = 15;
-            this.rtbShakespeare.Text = "";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(13, 232);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(144, 19);
-            this.label29.TabIndex = 12;
-            this.label29.Text = "Hospital Keypad";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(13, 203);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(108, 19);
-            this.label30.TabIndex = 11;
-            this.label30.Text = "Shakespeare";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(13, 262);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(135, 19);
-            this.label31.TabIndex = 13;
-            this.label31.Text = "Hospital Clock";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(13, 291);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(135, 19);
-            this.label32.TabIndex = 14;
-            this.label32.Text = "Hospital Blood";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Consolas", 12F);
-            this.label33.Location = new System.Drawing.Point(13, 171);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(117, 19);
-            this.label33.TabIndex = 14;
-            this.label33.Text = "Code Editor:";
-            // 
-            // btnApplycodes
-            // 
-            this.btnApplycodes.Font = new System.Drawing.Font("Consolas", 9.75F);
-            this.btnApplycodes.Location = new System.Drawing.Point(251, 287);
-            this.btnApplycodes.Name = "btnApplycodes";
-            this.btnApplycodes.Size = new System.Drawing.Size(101, 23);
-            this.btnApplycodes.TabIndex = 14;
-            this.btnApplycodes.Text = "Apply";
-            this.btnApplycodes.UseVisualStyleBackColor = true;
-            this.btnApplycodes.Click += new System.EventHandler(this.btnApplycodes_Click);
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Consolas", 7.5F);
+            this.label37.Location = new System.Drawing.Point(180, 3);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(90, 12);
+            this.label37.TabIndex = 27;
+            this.label37.Text = "*Not Operational*";
             // 
             // Form1
             // 
@@ -1187,6 +1256,7 @@
             this.Name = "Form1";
             this.Text = "Silent Hill 3 Trainer";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.tabPage8.ResumeLayout(false);
@@ -1310,6 +1380,12 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.Timer freeCamTimer;
+        private System.Windows.Forms.Label label37;
     }
 }
 

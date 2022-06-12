@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using System.Windows.Input;
+using System.Threading;
 
 namespace sh3csharp
 {
@@ -22,6 +24,9 @@ namespace sh3csharp
         public bool infiniteAmpoules = false;
 
         public long chosenFov;
+
+        public int camx;
+        public int camy;
 
         public Form1()
         {
@@ -514,6 +519,72 @@ namespace sh3csharp
             string fourchars = userstring.Substring(0, 4); // all codes only have the first 4 chars
             int total = Convert.ToInt32(fourchars, 16);
             return total;
+        }
+
+        private void checkBox11_CheckedChanged(object sender, EventArgs e)
+        {
+           
+            if (checkBox11.Checked) // Cursed method of doing this but it works.
+            {
+    
+            //    camx = ReadWritingMemory.ReadInteger("sh3", 0x0711A659);
+             //   camy = ReadWritingMemory.ReadInteger("sh3", 0x0711A661);
+              //  freeCamTimer.Enabled = true;
+                
+            }
+            else
+            {
+              //  freeCamTimer.Enabled = false;
+
+            }
+        }
+
+        
+
+        private void Form1_KeyDown(object sender, KeyEventArgs x)
+        {
+            //if (x.KeyCode == Keys.NumPad7 && freeCamTimer.Enabled == true)
+            //{
+            
+            //}
+            //if (x.KeyCode == Keys.NumPad8 && freeCamTimer.Enabled == true)
+            //{
+
+//            }
+  //          if (x.KeyCode == Keys.NumPad9 && freeCamTimer.Enabled == true)
+    //        {
+    //
+      //      }
+        //    if (x.KeyCode == Keys.NumPad4 && freeCamTimer.Enabled == true)
+          //  {
+          //
+            //}
+            //if (x.KeyCode == Keys.NumPad5 && freeCamTimer.Enabled == true)
+            //{
+
+            //}
+           // if (x.KeyCode == Keys.NumPad6 && freeCamTimer.Enabled == true)
+         //   {
+
+           // }
+            //if (x.KeyCode == Keys.NumPad1 && freeCamTimer.Enabled == true)
+            //{
+
+//            }
+  //          if (x.KeyCode == Keys.NumPad2 && freeCamTimer.Enabled == true)
+    //        {
+
+      //      }
+        //    if (x.KeyCode == Keys.NumPad3 && freeCamTimer.Enabled == true)
+          //  {
+
+            //}
+        }
+
+        private void freeCamTimer_Tick(object sender, EventArgs e)
+        {
+         //   ReadWritingMemory.WriteInteger("sh3", 0x0711A659, camx);
+          //  ReadWritingMemory.WriteInteger("sh3", 0x0711A661, camy);
         }
     }
 }
