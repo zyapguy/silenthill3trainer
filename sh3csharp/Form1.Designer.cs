@@ -43,6 +43,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.fovTimer = new System.Windows.Forms.Timer(this.components);
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.label37 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
@@ -131,7 +132,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.freeCamTimer = new System.Windows.Forms.Timer(this.components);
-            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.heatherHealth = new System.Windows.Forms.TextBox();
+            this.updatedHealth = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
+            this.label41 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tabPage7.SuspendLayout();
@@ -256,6 +263,16 @@
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Broken / Experimental";
             this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Consolas", 7.5F);
+            this.label37.Location = new System.Drawing.Point(180, 3);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(90, 12);
+            this.label37.TabIndex = 27;
+            this.label37.Text = "*Not Operational*";
             // 
             // label36
             // 
@@ -745,6 +762,13 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label41);
+            this.tabPage1.Controls.Add(this.button12);
+            this.tabPage1.Controls.Add(this.label40);
+            this.tabPage1.Controls.Add(this.updatedHealth);
+            this.tabPage1.Controls.Add(this.heatherHealth);
+            this.tabPage1.Controls.Add(this.label39);
+            this.tabPage1.Controls.Add(this.label38);
             this.tabPage1.Controls.Add(this.label28);
             this.tabPage1.Controls.Add(this.cb_action);
             this.tabPage1.Controls.Add(this.btn_applydifficulty);
@@ -1230,15 +1254,70 @@
             this.freeCamTimer.Interval = 5;
             this.freeCamTimer.Tick += new System.EventHandler(this.freeCamTimer_Tick);
             // 
-            // label37
+            // label38
             // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Consolas", 7.5F);
-            this.label37.Location = new System.Drawing.Point(180, 3);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(90, 12);
-            this.label37.TabIndex = 27;
-            this.label37.Text = "*Not Operational*";
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Consolas", 12F);
+            this.label38.Location = new System.Drawing.Point(231, 89);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(144, 19);
+            this.label38.TabIndex = 17;
+            this.label38.Text = "Health Changer:";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Consolas", 12F);
+            this.label39.Location = new System.Drawing.Point(231, 124);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(126, 19);
+            this.label39.TabIndex = 18;
+            this.label39.Text = "Health Value:";
+            // 
+            // heatherHealth
+            // 
+            this.heatherHealth.Enabled = false;
+            this.heatherHealth.Location = new System.Drawing.Point(363, 125);
+            this.heatherHealth.Name = "heatherHealth";
+            this.heatherHealth.Size = new System.Drawing.Size(100, 20);
+            this.heatherHealth.TabIndex = 19;
+            // 
+            // updatedHealth
+            // 
+            this.updatedHealth.Location = new System.Drawing.Point(363, 151);
+            this.updatedHealth.Name = "updatedHealth";
+            this.updatedHealth.Size = new System.Drawing.Size(100, 20);
+            this.updatedHealth.TabIndex = 20;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Consolas", 12F);
+            this.label40.Location = new System.Drawing.Point(231, 148);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(99, 19);
+            this.label40.TabIndex = 21;
+            this.label40.Text = "Change To:";
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(363, 177);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(100, 23);
+            this.button12.TabIndex = 22;
+            this.button12.Text = "Apply Change";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(259, 74);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(168, 15);
+            this.label41.TabIndex = 14;
+            this.label41.Text = "*Max Value 200 for now*";
             // 
             // Form1
             // 
@@ -1386,6 +1465,13 @@
         private System.Windows.Forms.CheckBox checkBox11;
         private System.Windows.Forms.Timer freeCamTimer;
         private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox updatedHealth;
+        private System.Windows.Forms.TextBox heatherHealth;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label41;
     }
 }
 

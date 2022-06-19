@@ -99,6 +99,8 @@ namespace sh3csharp
             infiniteMedkits = checkBox8.Checked;
             infiniteAmpoules = checkBox9.Checked;
 
+            heatherHealth.Text = Convert.ToString(ReadWritingMemory.ReadFloat("sh3", 0x898660));
+
             if (infiniteHandgun)
             {
                 // Set handgun ammo to 99
@@ -585,6 +587,13 @@ namespace sh3csharp
         {
          //   ReadWritingMemory.WriteInteger("sh3", 0x0711A659, camx);
           //  ReadWritingMemory.WriteInteger("sh3", 0x0711A661, camy);
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+       
+            float updateHealth = Convert.ToSingle(updatedHealth.Text);
+            ReadWritingMemory.WriteFloat("sh3", 0x898660, updateHealth);
         }
     }
 }
